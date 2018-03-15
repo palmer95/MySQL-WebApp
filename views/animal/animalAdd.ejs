@@ -1,0 +1,40 @@
+<%- include("../includes/header.ejs", {title:"Add New animal"}); %>
+
+<h1>Add New Animal</h1>
+<form action="/animal/insert" method="get">
+    Animal Type: <input id="typeOfAnimal" name="typeOfAnimal" type="text" />
+    <br />
+    <br />
+    Gender: <input id="sex" name="sex" type="text"/>
+    <br/>
+    <br/>
+    Weight (in pounds): <input id="weight_in_Pounds" name="weight_in_Pounds" type="text"/>
+    <br/>
+    <br/>
+    Breed: <input id="breed_name" name="breed_name" type="text"/>
+    <br/>
+    <br/>
+    Shelter: <input id="homeShelt" name="homeShelt" type="text"/>
+    <br/>
+    <br/>
+    <!--
+    Breed:<br />
+    <select id="breed_id" name="breed_id">
+        < for(var i=0; breed.length > i; i++ ) { >
+        <option value="< breed[i].breed_id >">< breed[i].breed_name ></option>
+        < } >
+    </select>
+    <br />
+    Shelter:<br />
+    <select id="shelter_id" name="shelter_id">
+        for(var i=0; shelter.length > i; i++ ) { >
+        <option value="<shelter[i].shelter_id >">< shelter[i].homeShelt ></option>
+        }
+    </select>
+    -->
+    <br />
+    <input type="submit" />
+
+</form>
+
+<%- include("../includes/footer.ejs"); %>
